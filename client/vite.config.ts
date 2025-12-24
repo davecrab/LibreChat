@@ -240,13 +240,13 @@ export default defineConfig(({ command }) => ({
   },
 
     resolve: {
-      alias: {
-        '~': path.join(__dirname, 'src/'),
-        '@librechat/client': path.resolve(__dirname, 'src/index.tsx'),
-        $fonts: path.resolve(__dirname, 'public/fonts'),
-        'micromark-extension-math': 'micromark-extension-llm-math',
-      },
-    },
+  alias: {
+    '~': path.join(__dirname, 'src/'),
+    '@librechat/client': path.resolve(__dirname, '../packages/client/src'),
+    $fonts: path.resolve(__dirname, 'public/fonts'),
+    'micromark-extension-math': 'micromark-extension-llm-math',
+  },
+},
 }));
 
 interface SourcemapExclude {
