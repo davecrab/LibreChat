@@ -239,9 +239,10 @@ export default defineConfig(({ command }) => ({
     chunkSizeWarningLimit: 1500,
   },
 
-  resolve: {
+    resolve: {
     alias: {
       '~': path.join(__dirname, 'src/'),
+      '@librechat/client': path.resolve(__dirname, 'src'),
       $fonts: path.resolve(__dirname, 'public/fonts'),
       'micromark-extension-math': 'micromark-extension-llm-math',
     },
